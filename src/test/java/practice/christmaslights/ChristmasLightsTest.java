@@ -11,13 +11,9 @@ import static org.hamcrest.CoreMatchers.is;
 public class ChristmasLightsTest {
 
 	@Test
-	void canCreateChristmasLights() {
-		ChristmasLights christmasLights = new ChristmasLights();
-	}
-	
-	@Test
-	void cantTurnOnASingleLight() throws Exception {
+	void cantTurnOnASingleLight(){
 		ChristmasLights christmasLights = new ChristmasLights();
 		assertThat(christmasLights.turnOn(0,0), is(1));
 	}
+	
 }
